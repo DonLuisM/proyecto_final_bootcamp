@@ -185,7 +185,7 @@ section h1 {
     margin: 2em auto;
     width: 95%;
     cursor: pointer;
-    transition: background-color 0.4s ease, color 0.4s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button_eb:hover {
