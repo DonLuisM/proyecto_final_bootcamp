@@ -6,90 +6,116 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-size: 1.1em;
     background-color: #f0f2f5;
 }
 
-/* Navbar */
-.navbar {
-    background-color: #4a90e2;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-/* Contenido principal */
 main {
-    max-width: 1200px;
+    max-width: 1500px;
+    min-width: 300px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
 section {
     background-color: white;
-    padding: 2rem;
+    padding: 2em;
     border-radius: 8px;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-h1 {
-    color: #333;
-    margin-bottom: 1rem;
+@media (max-width: 1000px) {
+    .nav_bar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+
+    .nav_bar nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .nav_bar nav ul li {
+        margin: 0.4em;
+    }  
+    
+    h1 {
+        text-align: center;
+    }
 }
 
-p {
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-/* Búsqueda */
-.search-container {
-    text-align: center;
-    margin: 2rem 0;
-}
-
-.search-input {
-    padding: 0.8rem 1rem;
-    width: 100%;
-    max-width: 500px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    margin-right: 0.5rem;
-}
-
-.search-button {
-    padding: 0.8rem 2rem;
+/* * Navbar */
+.nav_bar {
     background-color: #4a90e2;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-/* Tarjetas de equipos */
-.equipment-cards {
+.nav_bar h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+    gap: 2.5em;
+}
+
+.nav_links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    position: relative;
+}
+
+.nav_links a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3.2px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav_links a:hover::after {
+    width: 90%;
+}
+
+.nav_links a:hover {
+    background-color: rgba(5, 72, 172, 0.5);
+}
+
+/* * Index */
+.welcome_section h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 0.6em;
+    font-size: 2.1em;
+}
+
+.welcome_section p {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+.equipment_cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -119,7 +145,7 @@ p {
     color: #666;
 }
 
-.ver-mas {
+.ver_mas {
     display: block;
     padding: 1rem;
     text-align: center;
@@ -129,7 +155,7 @@ p {
     margin-top: 1rem;
 }
 
-/* Dropdown */
+/* * Categorias */
 .dropdown-container {
     position: relative;
     display: inline-block;
@@ -167,3 +193,89 @@ p {
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
+
+
+
+/* * Búsqueda de Equipos */
+.search_page h1 {
+    margin-bottom: 0.4em;
+    font-size: 2em;
+}
+
+.search_box {
+    background-color: rgb(240, 242, 245);
+    width: 90%;
+    margin: 1em auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+    box-sizing: border-box;
+    padding: 0.5px 0 1em 0;
+}
+
+
+.search_section {
+    text-align: center;
+    margin-top: 1.2em;
+}
+
+.search_section h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.search_section [type="text"] {
+    padding: 0.8rem 1rem;
+    width: 250px;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-right: 0.5em;
+    background-image: url('../sources/search_icon.png');
+    background-size: 25px 25px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    outline: none;
+    transition: width 0.5s ease-in-out, border-color 0.4s ease;
+}
+
+.search_section [type="text"]:focus {
+    width: 100%;
+    border-color: rgba(75, 145, 226, 0.5);
+}
+
+.search_section [type="text"]::placeholder {
+    font-size: 1.05em;
+    font-style: italic;
+}
+
+.search_section button {
+    padding: 0.8rem 2rem;
+    font-size: 0.8em;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    margin: 0.3em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search_section button:hover {
+    background-color: #3b7ab4;
+}
+
+@media (max-width: 1000px) {
+    .search_section [type="text"] {
+        width: 190px;
+    }
+
+    .search_section [type="text"]:focus {
+        width: 70%;
+    }
+}
+/* * Recursos */
+
+
+
+/* * LogIn */
