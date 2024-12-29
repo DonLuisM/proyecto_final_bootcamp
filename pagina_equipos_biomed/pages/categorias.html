@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>categorias</title>
+    <title>Categorias</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -27,13 +27,15 @@
             <p>En esta sección se presentan las categorías de clasificación de equipos biomédicos, para que puedas conocer más acerca de ellos.</p>
 
             <div class="dropdown_container">
-                <button class="dropdown_button">Selecciona Clasificación</button>
+                <button id="clasificacion_eq" class="dropdown_button">Selecciona Clasificación</button>
                 <div class="dropdown_content">
-                    <a href="#riesgo">Clasificación por Riesgo</a>
-                    <a href="#funcionalidad">Clasificación por funcionalidad</a>
-                    <a href="#link3">Link 3</a>
+                    <a href="#" onclick="elegirClasif('Riesgo')">Clasificación por Riesgo</a>
+                    <a href="#" onclick="elegirClasif('Funcionalidad')">Clasificación por funcionalidad</a>
+                    <a href="#" onclick="elegirClasif('Link3')">Link 3</a>
                 </div>
             </div>
+
+            
         </section>
     </main>
 
