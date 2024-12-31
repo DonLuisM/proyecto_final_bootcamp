@@ -52,7 +52,7 @@ section h1 {
 .nav_links {
     display: flex;
     list-style: none;
-    gap: 2.5em;
+    gap: 2em;
     padding-right: 0.2em;
 }
 
@@ -62,7 +62,7 @@ section h1 {
     font-weight: 500;
     font-size: 1.1em;
     position: relative;
-    padding: 0.4em 0.4em;
+    padding: 0.5em 1em;
     border-radius: 6px;
     transition: background-color 0.3s ease-in-out;
 }
@@ -187,7 +187,7 @@ section h1 {
     margin: 2em auto;
     width: 95%;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.5s ease, color 0.3s ease;
 }
 
 .button_eb:hover {
@@ -247,6 +247,29 @@ section h1 {
     background-color: #f1f1f1;
 }
 
+.dropdown_content a:active {
+    background-color: #ddd;
+}
+
+.results_filters {
+    align-items: center;
+}
+
+.results_filters button {
+    display: inline-flex;
+    margin: 0.4em;
+    padding: 0.5em 1em;
+    font-size: 0.8em;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.results_filters button:hover {
+    background-color: #6e2828;
+}
 
 /* * Búsqueda de Equipos */
 /* .search_page h1 {
