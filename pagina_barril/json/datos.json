@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Barril 1",
+        "descripcion": "Barril para asados con amplia capacidad de carnes, parrila y tenedor incluido en el servicio",
+        "precio": "65.000 COP",
+        "imagen": "barrilAsador.jpg"
+    },
+    {
+        "nombre": "Barril 2",
+        "descripcion": "Barril para asados con amplia capacidad de carnes, parrila y tenedor incluido en el servicio",
+        "precio": "65.000 COP",
+        "imagen": "barrilAsador.jpg"
+    },
+    {
+        "nombre": "Barril 3",
+        "descripcion": "Barril para asados con amplia capacidad de carnes, parrila y tenedor incluido en el servicio",
+        "precio": "65.000 COP",
+        "imagen": "barrilAsador.jpg"
+    }
+]
