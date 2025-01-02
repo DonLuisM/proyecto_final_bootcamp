@@ -4,7 +4,7 @@ fetch('../json/datos.json')
     .then(data => {
         let resultados = document.getElementById('resultados');
         data.forEach(usuario => {
-            resultados.innerHTML += `<p>Nombre: ${usuario.nombre}, Edad: ${usuario.descripcion}, Ciudad:
+            resultados.innerHTML += `<p>Edad: ${usuario.descripcion}, Ciudad:
 ${usuario.precio}</p>`;
         });
     })
