@@ -35,7 +35,7 @@ section h1 {
 /* * Navbar */
 .nav_bar {
     background-color: #4a90e2;
-    padding: 1rem 2rem;
+    padding: 1em 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,9 +54,10 @@ section h1 {
     list-style: none;
     gap: 2em;
     padding-right: 0.2em;
+    align-items: center;
 }
 
-.nav_links a {
+.nav_links li a {
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -85,6 +86,33 @@ section h1 {
 
 .nav_links a:hover {
     background-color: rgba(5, 72, 172, 0.7);
+}
+
+.nav_links button {
+    background-color: rgba(74, 144, 226, 0.7);
+    color: white;
+    border: 1px solid #001c3b;
+    padding: 0.5em 1.2em;
+    border-radius: 7px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav_links button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.nav_links button a:hover {
+    text-decoration: none;
+    background: none;
+}
+
+.nav_links button:hover {
+    background-color: rgba(5, 72, 172, 1);
 }
 
 @media (max-width: 900px) {

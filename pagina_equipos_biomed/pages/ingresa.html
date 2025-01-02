@@ -15,12 +15,26 @@
                 <li><a href="categorias.html">Categorías</a></li>
                 <li><a href="busqueda.html">Búsqueda</a></li>
                 <li><a href="recursos.html">Recursos</a></li>
-                <li><a href="ingresa.html">Ingresa</a></li>
+                <!-- <li><a href="ingresa.html">Ingresa</a></li> -->
+                <button><a href="ingresa.html">Ingresa</a></button>
             </ul>
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <section class="login_section">
+            <h1>Inicia Sesión</h1>
+            <form action="">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+                <button type="submit">Ingresar</button>
+            </form>
+            <p>Olvidaste Contraseña</p>
+            <p>¿No tienes cuenta? Registrate</p>
+        </section>
+    </main>
 
     <script src="../js/script.js"></script>
 </body>
