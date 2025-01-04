@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alquiler de Barriles</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
-    <header class="nav_bar">
-        <h1>Rent A Barril</h1>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="alquiler.html">Alquiler de Barriles</a></li>
-                <li><a href="servicios.html">Servicio de Asados</a></li>
-                <li><a href="disponibilidad.html">Disponibilidad</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="estado_reserva.html">Gestionar mi reserva</a></li>
-            </ul>
-        </nav>
+    <header>
+        <section class="intro_page">
+            <h1>Rent A Barril</h1>
+            <a href="estado_reserva.html">Gestionar Mi Reserva</a>
+        </section>
+        <section class="nav_bar">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="alquiler.html">Alquiler de Barriles</a></li>
+                    <li><a href="servicios.html">Servicio de Asados</a></li>
+                    <li><a href="disponibilidad.html">Disponibilidad</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
-    
+
+    <main>
+        <section class="busqueda_alquiler">
+            <h2>Buscar Barril</h2>
+            <p>
+                Busca si se encuentra disponible uno de nuestros barriles para alquilar en la fecha y hora que
+                necesitas.
+            </p>
+            <form action="">
+                <label for="lugar">Lugar Reserva</label>
+                <input type="text" name="lugar" id="lugar">
+                <label for="fecha">Fecha Inicio</label>
+                <input type="date" name="fecha" id="fecha_inicio">
+                <label for="hora">Hora</label>
+                <input type="time" name="hora" id="hora">
+                <label for="fecha">Fecha Fin</label>
+                <input type="date" name="fecha" id="fecha_fin">
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+    </main>
+
 </body>
+
 </html>
