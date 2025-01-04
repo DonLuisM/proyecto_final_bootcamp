@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias</title>
     <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person"/>
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
-    <header class="nav_bar">
-        <h1>EncicloEB</h1>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="categorias.html">Categorías</a></li>
-                <li><a href="busqueda.html">Búsqueda</a></li>
-                <li><a href="recursos.html">Recursos</a></li>
-                <a href="ingresa.html" class="login_button">
-                    <span class="material-symbols-outlined">person</span>
-                </a>
-            </ul>
-        </nav>
+    <header>
+        <div class="accesible_nav">
+            <span class="material-symbols-outlined">
+                Language
+            </span>
+            <select name="idioma" id="idioma" onchange="cambiarIdioma()">
+                <option value="es">Es</option>
+                <option value="en">En</option>
+            </select>
+        </div>
+
+        <div class="nav_bar">
+            <h1>EncicloEB</h1>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="categorias.html">Categorías</a></li>
+                    <li><a href="busqueda.html">Búsqueda</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <a href="ingresa.html" class="login_button">
+                        <span class="material-symbols-outlined">person</span>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="categories_page">
             <h1>Clasificación de Equipos</h1>
-            <p>Para clasificar equipos biomédicos se tienen distintos aspectos o criterios para ello, como es el caso de clasificación por riesgo, clasificación por funcionalidad.</p>
-            <p>En esta sección se presentan las categorías de clasificación de equipos biomédicos, para que puedas conocer más acerca de ellos.</p>
+            <p>Para clasificar equipos biomédicos se tienen distintos aspectos o criterios para ello, como es el caso de
+                clasificación por riesgo, clasificación por funcionalidad.</p>
+            <p>En esta sección se presentan las categorías de clasificación de equipos biomédicos, para que puedas
+                conocer más acerca de ellos.</p>
 
             <div class="dropdown_container">
                 <button id="clasificacion_eq" class="dropdown_button">Selecciona Clasificación</button>
                 <div class="dropdown_content">
                     <a href="#" onclick="elegirClasif('Clasificación por Riesgo')">Clasificación por Riesgo</a>
-                    <a href="#" onclick="elegirClasif('Clasificación por Funcionalidad')">Clasificación por Funcionalidad</a>
+                    <a href="#" onclick="elegirClasif('Clasificación por Funcionalidad')">Clasificación por
+                        Funcionalidad</a>
                     <a href="#" onclick="elegirClasif('Link3')">Link 3</a>
                 </div>
             </div>
@@ -42,10 +59,11 @@
             <div id="resultados_drop" class="results_filters"></div>
             <div id="resultados_final" class="results_final"></div>
 
-            
+
         </section>
     </main>
 
     <script src="../js/script.js"></script>
 </body>
+
 </html>
