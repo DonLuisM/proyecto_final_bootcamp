@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EncicloEB - Enciclopedia de Equipos Biomédicos</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person"/>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -17,8 +19,10 @@
                 <li><a href="pages/categorias.html">Categorías</a></li>
                 <li><a href="pages/busqueda.html">Búsqueda</a></li>
                 <li><a href="pages/recursos.html">Recursos</a></li>
-                <!-- <li><a href="pages/ingresa.html">Ingresa</a></li> -->
-                <a href="pages/ingresa.html"><button>Ingresa</button></a>
+                <!-- Botón Inicio Sesión -->
+                <a href="pages/ingresa.html" class="login_button">
+                    <span class="material-symbols-outlined">person</span>
+                </a>
             </ul>
         </nav>
     </header>
@@ -39,10 +43,10 @@
             <div class="search_section">
                 <h2>Búsqueda de Equipos</h2>
                 <input id="buscar" type="text" placeholder="Buscar...">
-                <a id="buscar_pagina" href="pages/busqueda.html"  onclick="return buscarVacio()">
+                <a id="buscar_pagina" href="pages/busqueda.html" onclick="return buscarVacio()">
                     <button>Buscar</button>
                 </a>
-                </div>
+            </div>
 
         </section>
 
