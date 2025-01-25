@@ -1,0 +1,603 @@
+[
+    {
+        "id": "1",
+        "equipo": "Monitor de Signos Vitales",
+        "marca": "Nihon Kohden",
+        "modelo": "BSM-3763",
+        "descripcion": "Monitor de paciente avanzado para medición continua de signos vitales con pantalla táctil de alta resolución",
+        "categoria": "Monitoreo",
+        "clasificacionRiesgo": "IIb",
+        "parametrosMedicion": [
+            "ECG",
+            "SpO2",
+            "NIBP",
+            "IBP",
+            "Temperatura",
+            "Respiración",
+            "EtCO2",
+            "Gasto Cardíaco"
+        ],
+        "mantenimiento": {
+            "frecuenciaMantenimientoPrev": "Cada 6 meses",
+            "calibracion": "Anual",
+            "principalesVerificaciones": [
+                "Validación de parametros dentro del rango",
+                "Verificación de alarmas",
+                "Calibración de NIBP",
+                "Prueba de seguridad eléctrica",
+                "Limpieza interna",
+                "Actualización de software",
+                "Verificación de batería"
+            ]
+        },
+        "normativasCumplimiento": [
+            "IEC 60601-1",
+            "IEC 60601-1-2",
+            "IEC 60601-2-49",
+            "ISO 80601-2-61"
+        ],
+        "accesoriosIncluidos": [
+            "Cable de ECG de 3 derivaciones",
+            "Sensor SpO2 Nihon Kohden",
+            "Manguito NIBP adulto",
+            "Cable de alimentación",
+            "Manual de usuario",
+            "Batería recargable"
+        ],
+        "aplicacionesClinicas": [
+            "UCI",
+            "Urgencias",
+            "Quirófano",
+            "Recuperación post-anestésica",
+            "Unidad coronaria"
+        ],
+        "alertasSistema": {
+            "tecnicas": [
+                "Batería baja",
+                "Sensor desconectado",
+                "Fallo de sistema",
+                "Error de conexión"
+            ],
+            "fisiologicas": [
+                "Límites de frecuencia cardíaca",
+                "Desaturación SpO2",
+                "Presión arterial fuera de rango",
+                "Arritmias"
+            ]
+        },
+        "vidaUtilEstimada": "8-10 años",
+        "documentacionTecnica": {
+            "manualServicio": "URL_manual_servicio_NK",
+            "manualUsuario": "URL_manual_usuario_NK",
+            "guiaRapida": "URL_guia_rapida_NK"
+        }
+    },
+
+    {
+        "id": "2",
+        "equipo": "Monitor de Signos Vitales",
+        "marca": "Mindray",
+        "modelo": "UMEC 10",
+        "descripcion": "Monitor de paciente compacto con pantalla táctil de 10.4 pulgadas, ideal para diversos entornos clínicos",
+        "categoria": "Monitoreo",
+        "clasificacionRiesgo": "IIb",
+        "parametrosMedicion": [
+            "ECG",
+            "SpO2",
+            "NIBP",
+            "IBP",
+            "Temperatura",
+            "Respiración"
+        ],
+        "mantenimiento": {
+            "frecuenciaMantenimientoPrev": "Cada 6 meses",
+            "calibracion": "Anual",
+            "principalesVerificaciones": [
+                "Validación de parametros dentro del rango",
+                "Verificación de alarmas",
+                "Calibración de NIBP",
+                "Prueba de seguridad eléctrica",
+                "Limpieza interna",
+                "Actualización de software",
+                "Control de cables y sensores"
+            ]
+        },
+        "normativasCumplimiento": [
+            "IEC 60601-1",
+            "IEC 60601-1-2",
+            "IEC 60601-2-49"
+        ],
+        "accesoriosIncluidos": [
+            "Cable de ECG",
+            "Sensor SpO2 Mindray",
+            "Manguito NIBP adulto",
+            "Cable de alimentación",
+            "Manual de usuario",
+            "Soporte de montaje"
+        ],
+        "aplicacionesClinicas": [
+            "UCI",
+            "Urgencias",
+            "Hospitalización",
+            "Transporte intrahospitalario"
+        ],
+        "alertasSistema": {
+            "tecnicas": [
+                "Batería baja",
+                "Sensor desconectado",
+                "Fallo de sistema",
+                "Error de medición"
+            ],
+            "fisiologicas": [
+                "Límites de frecuencia cardíaca",
+                "Desaturación SpO2",
+                "Presión arterial fuera de rango",
+                "Apnea"
+            ]
+        },
+        "vidaUtilEstimada": "8-10 años",
+        "documentacionTecnica": {
+            "manualServicio": "URL_manual_servicio_mindray10",
+            "manualUsuario": "URL_manual_usuario_mindray10",
+            "guiaRapida": "URL_guia_rapida_mindray10"
+        }
+    },
+
+    {
+        "id": "3",
+        "equipo": "Monitor de Signos Vitales",
+        "marca": "Mindray",
+        "modelo": "UMEC 12",
+        "descripcion": "Monitor de paciente avanzado con pantalla táctil de 12.1 pulgadas y capacidades de monitorización expandidas",
+        "categoria": "Monitoreo",
+        "clasificacionRiesgo": "IIb",
+        "parametrosMedicion": [
+            "ECG",
+            "SpO2",
+            "NIBP",
+            "IBP",
+            "Temperatura",
+            "Respiración",
+            "EtCO2",
+            "Análisis ST"
+        ],
+        "mantenimiento": {
+            "frecuenciaMantenimientoPrev": "Cada 6 meses",
+            "calibracion": "Anual",
+            "principalesVerificaciones": [
+                "Validación de parametros dentro del rango",
+                "Verificación de alarmas",
+                "Calibración de NIBP",
+                "Prueba de seguridad eléctrica",
+                "Limpieza interna",
+                "Actualización de software",
+                "Verificación de módulos"
+            ]
+        },
+        "normativasCumplimiento": [
+            "IEC 60601-1",
+            "IEC 60601-1-2",
+            "IEC 60601-2-49"
+        ],
+        "accesoriosIncluidos": [
+            "Cable de ECG de 5 derivaciones",
+            "Sensor SpO2 Mindray",
+            "Manguito NIBP adulto",
+            "Cable de alimentación",
+            "Manual de usuario",
+            "Soporte de montaje",
+            "Batería de litio"
+        ],
+        "aplicacionesClinicas": [
+            "UCI",
+            "Urgencias",
+            "Quirófano",
+            "Recuperación post-anestésica",
+            "Unidad coronaria"
+        ],
+        "alertasSistema": {
+            "tecnicas": [
+                "Batería baja",
+                "Sensor desconectado",
+                "Fallo de sistema",
+                "Error de módulo"
+            ],
+            "fisiologicas": [
+                "Límites de frecuencia cardíaca",
+                "Desaturación SpO2",
+                "Presión arterial fuera de rango",
+                "Arritmias",
+                "Cambios ST"
+            ]
+        },
+        "vidaUtilEstimada": "8-10 años",
+        "documentacionTecnica": {
+            "manualServicio": "URL_manual_servicio_mindray12",
+            "manualUsuario": "URL_manual_usuario_mindray12",
+            "guiaRapida": "URL_guia_rapida_mindray12"
+        }
+    },
+
+    {
+        "id": "4",
+        "equipo": "Monitor de Signos Vitales",
+        "marca": "GE Healthcare",
+        "modelo": "CARESCAPE B650",
+        "descripcion": "Monitor de paciente de alta gama con capacidades avanzadas de monitorización y conectividad",
+        "categoria": "Monitoreo",
+        "clasificacionRiesgo": "IIb",
+        "parametrosMedicion": [
+            "ECG",
+            "SpO2",
+            "NIBP",
+            "IBP",
+            "Temperatura",
+            "Respiración",
+            "EtCO2",
+            "Gasto Cardíaco",
+            "BIS",
+            "Análisis de arritmias"
+        ],
+        "mantenimiento": {
+            "frecuenciaMantenimientoPrev": "Cada 6 meses",
+            "calibracion": "Anual",
+            "principalesVerificaciones": [
+                "Validación de parametros dentro del rango",
+                "Verificación de alarmas",
+                "Calibración de NIBP",
+                "Prueba de seguridad eléctrica",
+                "Limpieza interna",
+                "Actualización de software",
+                "Verificación de módulos",
+                "Test de rendimiento"
+            ]
+        },
+        "normativasCumplimiento": [
+            "IEC 60601-1",
+            "IEC 60601-1-2",
+            "IEC 60601-2-49",
+            "ISO 80601-2-61"
+        ],
+        "accesoriosIncluidos": [
+            "Cable de ECG de 5 derivaciones",
+            "Sensor SpO2 TruSignal",
+            "Manguito NIBP adulto",
+            "Cable de alimentación",
+            "Manual de usuario",
+            "Soporte de montaje",
+            "Batería de ion-litio",
+            "Módulo de temperatura"
+        ],
+        "aplicacionesClinicas": [
+            "UCI",
+            "Urgencias",
+            "Quirófano",
+            "Recuperación post-anestésica",
+            "Unidad coronaria",
+            "Cuidados intermedios"
+        ],
+        "alertasSistema": {
+            "tecnicas": [
+                "Batería baja",
+                "Sensor desconectado",
+                "Fallo de sistema",
+                "Error de módulo",
+                "Fallo de red"
+            ],
+            "fisiologicas": [
+                "Límites de frecuencia cardíaca",
+                "Desaturación SpO2",
+                "Presión arterial fuera de rango",
+                "Arritmias complejas",
+                "Cambios ST",
+                "Apnea",
+                "Fibrilación auricular"
+            ]
+        },
+        "vidaUtilEstimada": "10-12 años",
+        "documentacionTecnica": { 
+            "manualServicio": "URL_manual_servicio_GE",
+            "manualUsuario": "URL_manual_usuario_GE",
+            "guiaRapida": "URL_guia_rapida_GE"
+        }
+    },
+
+    {
+        "id": "5",
+        "equipo": "Ventilador mecánico",
+        "marca": "Medtronic",
+        "modelo": "PB980",
+        "descripcion": "Ventilador de alto rendimiento diseñado para soporte respiratorio invasivo.",
+        "categoria": "Respiratorio",
+        "clasificacionRiesgo": "IIa",
+        "parametrosMedicion": ["Volumen tidal", "Presión en vía aérea", "Frecuencia respiratoria"],
+        "mantenimiento": {
+            "frecuenciaMantenimientoPrev": "Anual",
+            "calibracion": "Cada 2 años",
+            "principalesVerificaciones": [
+                "Prueba de fugas",
+                "Calibración de sensores",
+                "Prueba de alarmas",
+                "Inspección visual"
+            ]
+        },
+        "normativasCumplimiento": [
+            "ISO 80601-2-12",
+            "IEC 60601-1",
+            "IEC 60601-1-2"
+        ],
+        "accesoriosIncluidos": [
+            "Circuito respiratorio adulto",
+            "Filtro HEPA",
+            "Cable de alimentación",
+            "Manual de usuario"
+        ],
+        "aplicacionesClinicas": [
+            "UCI",
+            "Quirófano",
+            "Urgencias"
+        ],
+        "alertasSistema": {
+            "tecnicas": ["Fallo de ventilador", "Sensor desconectado", "Batería baja"],
+            "fisiologicas": ["Apnea", "Volumen tidal bajo", "Presión alta"]
+        },
+        "vidaUtilEstimada": "10-12 años",
+        "documentacionTecnica": {
+            "manualServicio": "URL_manual_servicio_ventilador",
+            "manualUsuario": "URL_manual_usuario_ventilador",
+            "guiaRapida": "URL_guia_rapida_ventilador"
+        }
+    },
+
+    {
+        "id": "6",
+        "equipo": "Ventilador mecánico",
+        "marca": "Philips",
+        "modelo": "Respironics Trilogy 100",
+        "descripcion": "Ventilador mecánico de alto rendimiento para pacientes con necesidades respiratorias críticas, adecuado para uso en UCI y transporte.",
+        "categoria": "Respiratorio",
+        "clasificacionRiesgo": "IIa",
+        "parametrosMedicion": [
+            "Ventilación controlada",
+            "Presión inspiratoria",
+            "Volumen tidal",
+            "Frecuencia respiratoria",
+            "Oximetría de pulso"
+        ],
+        "mantenimiento": {
+            "frecuenciaMantenimientoPrev": "Cada 12 meses",
+            "calibracion": "Cada 2 años",
+            "principalesVerificaciones": [
+                "Revisión de filtros",
+                "Calibración de sensores de presión",
+                "Verificación de alarmas",
+                "Inspección de circuitos",
+                "Prueba de seguridad eléctrica"
+            ]
+        },
+        "normativasCumplimiento": [
+            "ISO 80601-2-12",
+            "IEC 60601-1",
+            "IEC 60601-1-2"
+        ],
+        "accesoriosIncluidos": [
+            "Circuito respiratorio",
+            "Cable de alimentación",
+            "Filtro de aire",
+            "Manual de usuario",
+            "Soporte de pared opcional"
+        ],
+        "aplicacionesClinicas": [
+            "UCI",
+            "Urgencias",
+            "Rehabilitación respiratoria",
+            "Transporte de pacientes"
+        ],
+        "alertasSistema": {
+            "tecnicas": [
+                "Fallo de ventilador",
+                "Batería baja",
+                "Sensor desconectado",
+                "Error de presión"
+            ],
+            "fisiologicas": [
+                "Volumen tidal bajo",
+                "Presión excesiva",
+                "Desaturación de oxígeno"
+            ]
+        },
+        "vidaUtilEstimada": "8-10 años",
+        "documentacionTecnica": {
+            "manualServicio": "URL_manual_servicio_philips_trilogy",
+            "manualUsuario": "URL_manual_usuario_philips_trilogy",
+            "guiaRapida": "URL_guia_rapida_philips_trilogy"
+        }
+    },
+
+    {
+        "id": "7",
+        "equipo": "Resonador Magnético",
+        "marca": "GE Healthcare",
+        "modelo": "Signa Artist 1.5T",
+        "descripcion": "Resonador magnético de 1.5 Tesla diseñado para ofrecer imágenes de alta calidad en aplicaciones clínicas generales, con un diseño compacto y accesibilidad mejorada.",
+        "categoria": "Diagnóstico por Imágenes",
+        "clasificacionRiesgo": "IIb",
+        "parametrosMedicion": [
+            "Imágenes por resonancia magnética",
+            "Secuencias de imágenes ponderadas por T1, T2",
+            "Imágenes de alta resolución"
+        ],
+        "mantenimiento": {
+            "frecuenciaMantenimientoPrev": "Cada 12 meses",
+            "calibracion": "Cada 2 años",
+            "principalesVerificaciones": [
+                "Verificación de campo magnético",
+                "Calibración de gradientes",
+                "Prueba de resonancia",
+                "Inspección de bobinas y antenas",
+                "Verificación de alarmas y seguridad"
+            ]
+        },
+        "normativasCumplimiento": [
+            "IEC 60601-2-33",
+            "IEC 60601-1",
+            "ISO 13485"
+        ],
+        "accesoriosIncluidos": [
+            "Bobinas de resonancia",
+            "Cable de alimentación",
+            "Software de imagen",
+            "Manual de usuario"
+        ],
+        "aplicacionesClinicas": [
+            "Neurología",
+            "Cardiología",
+            "Oncología",
+            "Radiología general"
+        ],
+        "alertasSistema": {
+            "tecnicas": [
+                "Fallo de resonancia",
+                "Error de bobinas",
+                "Desviación en gradientes"
+            ],
+            "fisiologicas": [
+                "Ruido excesivo en imágenes",
+                "Distorsión de la imagen"
+            ]
+        },
+        "vidaUtilEstimada": "12-15 años",
+        "documentacionTecnica": {
+            "manualServicio": "URL_manual_servicio_ge_signa",
+            "manualUsuario": "URL_manual_usuario_ge_signa",
+            "guiaRapida": "URL_guia_rapida_ge_signa"
+        }
+    },
+
+    {
+        "id": "8",
+        "equipo": "Resonador Magnético",
+        "marca": "Siemens",
+        "modelo": "Magnetom Aera 1.5T",
+        "descripcion": "Resonador magnético 1.5T de alta resolución con tecnología de última generación, diseñado para ofrecer imágenes nítidas y precisas para una amplia variedad de aplicaciones clínicas.",
+        "categoria": "Diagnóstico por Imágenes",
+        "clasificacionRiesgo": "IIb",
+        "parametrosMedicion": [
+            "Imágenes por resonancia magnética",
+            "Secuencias de imágenes ponderadas por T1, T2",
+            "Imágenes de alta resolución",
+            "Imágenes funcionales"
+        ],
+        "mantenimiento": {
+            "frecuenciaMantenimientoPrev": "Cada 12 meses",
+            "calibracion": "Cada 2 años",
+            "principalesVerificaciones": [
+                "Verificación de campo magnético",
+                "Calibración de resonancia",
+                "Pruebas de bobinas y gradientes",
+                "Verificación de alarmas"
+            ]
+        },
+        "normativasCumplimiento": [
+            "IEC 60601-2-33",
+            "IEC 60601-1",
+            "ISO 13485"
+        ],
+        "accesoriosIncluidos": [
+            "Bobinas de resonancia",
+            "Cable de alimentación",
+            "Software de procesamiento de imágenes",
+            "Manual de usuario"
+        ],
+        "aplicacionesClinicas": [
+            "Neurología",
+            "Cardiología",
+            "Ortopedia",
+            "Radiología general"
+        ],
+        "alertasSistema": {
+            "tecnicas": [
+                "Fallo de resonancia",
+                "Error de bobinas",
+                "Desviación en gradientes"
+            ],
+            "fisiologicas": [
+                "Ruido excesivo en imágenes",
+                "Distorsión en la imagen"
+            ]
+        },
+        "vidaUtilEstimada": "12-15 años",
+        "documentacionTecnica": {
+            "manualServicio": "URL_manual_servicio_siemens_aera",
+            "manualUsuario": "URL_manual_usuario_siemens_aera",
+            "guiaRapida": "URL_guia_rapida_siemens_aera"
+        }
+    },
+
+    {
+        "id": "9",
+        "equipo": "Resonador Magnético",
+        "marca": "Siemens",
+        "modelo": "Magnetom Skyra 3T",
+        "descripcion": "Resonador magnético de 3 Tesla, diseñado para proporcionar imágenes de ultra alta resolución con una velocidad de adquisición rápida. Ideal para aplicaciones avanzadas en neurología, cardiología y oncología.",
+        "categoria": "Diagnóstico por Imágenes",
+        "clasificacionRiesgo": "IIb",
+        "parametrosMedicion": [
+            "Imágenes por resonancia magnética",
+            "Secuencias de imágenes ponderadas por T1, T2",
+            "Imágenes funcionales de alta resolución",
+            "Imagen de difusión y espectroscopía"
+        ],
+        "mantenimiento": {
+            "frecuenciaMantenimientoPrev": "Cada 12 meses",
+            "calibracion": "Cada 2 años",
+            "principalesVerificaciones": [
+                "Verificación de campo magnético",
+                "Pruebas de resonancia y gradientes",
+                "Mantenimiento de bobinas de alta resolución",
+                "Verificación de sistemas de enfriamiento",
+                "Inspección de componentes electrónicos"
+            ]
+        },
+        "normativasCumplimiento": [
+            "IEC 60601-2-33",
+            "IEC 60601-1",
+            "ISO 13485",
+            "FDA 510(k)"
+        ],
+        "accesoriosIncluidos": [
+            "Bobinas de resonancia de alto campo",
+            "Cable de alimentación",
+            "Software de procesamiento avanzado de imágenes",
+            "Manual de usuario"
+        ],
+        "aplicacionesClinicas": [
+            "Neurología avanzada",
+            "Cardiología",
+            "Oncología",
+            "Radiología de alta resolución"
+        ],
+        "alertasSistema": {
+            "tecnicas": [
+                "Fallo de resonancia",
+                "Desviación de gradientes",
+                "Error de bobinas",
+                "Fallo del sistema de refrigeración"
+            ],
+            "fisiologicas": [
+                "Ruido de imagen",
+                "Distorsión de imagen por movimiento"
+            ]
+        },
+        "vidaUtilEstimada": "12-15 años",
+        "documentacionTecnica": {
+            "manualServicio": "URL_manual_servicio_siemens_skyra",
+            "manualUsuario": "URL_manual_usuario_siemens_skyra",
+            "guiaRapida": "URL_guia_rapida_siemens_skyra"
+        }
+    }
+    
+    
+    
+    
+]

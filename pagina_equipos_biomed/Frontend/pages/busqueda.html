@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Equipos</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="accesible_nav">
+            <span class="material-symbols-outlined">
+                Language
+            </span>
+            <select name="idioma" id="idioma" onchange="cambiarIdioma()">
+                <option value="es">Es</option>
+                <option value="en">En</option>
+            </select>
+        </div>
+
+        <div class="nav_bar">
+            <h1>EncicloEB</h1>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="categorias.html">Categorías</a></li>
+                    <li><a href="busqueda.html">Búsqueda</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <a href="ingresa.html" class="login_button">
+                        <span class="material-symbols-outlined">person</span>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="search_page">
+            <h1>Explora Equipos Biomédicos</h1>
+            <p>Encuentra información detallada sobre equipos biomédicos. Ingresa el nombre o una palabra clave para
+                comenzar.</p>
+
+                <div class="search_box">
+                    <div class="search_section">
+                        <h2>Encuentra tu Equipo</h2>
+                        <input id="buscar" type="text" placeholder="Ej. Tomógrafo">
+                        <button id="btn_buscar">Buscar</button>
+                        <div id="resultados_busq"></div>
+                    </div>
+                </div>
+                <div id="resultados_equipos_busq"></div>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

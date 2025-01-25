@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="accesible_nav">
+            <span class="material-symbols-outlined">
+                Language
+            </span>
+            <select name="idioma" id="idioma" onchange="cambiarIdioma()">
+                <option value="es">Es</option>
+                <option value="en">En</option>
+            </select>
+        </div>
+
+        <div class="nav_bar">
+            <h1>EncicloEB</h1>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="categorias.html">Categorías</a></li>
+                    <li><a href="busqueda.html">Búsqueda</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <a href="ingresa.html" class="login_button">
+                        <span class="material-symbols-outlined">person</span>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="categories_page">
+            <h1>Clasificación de Equipos</h1>
+            <p>La clasificación de equipos biomédicos se basa en diversos criterios fundamentales, como el nivel de
+                riesgo asociado a su uso y su funcionalidad dentro del entorno clínico. Comprender estas clasificaciones
+                es esencial para su correcta gestión y aplicación. En esta sección encontrarás información detallada
+                sobre las principales categorías de clasificación de
+                equipos biomédicos, diseñada para ayudarte a ampliar tu conocimiento en cuanto a la clasificación de los
+                equipos. </p>
+
+            <div class="botones_filtro">
+                <button id="todos" class="bots_filt active" data-filter="todos">
+                    Todos
+                </button>
+                <button id="riesgoI" class="bots_filt" data-filter="riesgoI">
+                    Riesgo I
+                </button>
+                <button id="riesgoIIa" class="bots_filt" data-filter="riesgoIIa">
+                    Riesgo IIa
+                </button>
+                <button id="riesgoIIb" class="bots_filt" data-filter="riesgoIIb">
+                    Riesgo IIb
+                </button>
+                <button id="riesgoIII" class="bots_filt" data-filter="riesgoIII">
+                    Riesgo III
+                </button>
+                <button id="terapia" class="bots_filt" data-filter="terapia">
+                    Terapia
+                </button>
+                <button id="diagnostico" class="bots_filt" data-filter="diagnostico">
+                    Diagnóstico
+                </button>
+                <button id="soporte" class="bots_filt" data-filter="soporte">
+                    Soporte Vital
+                </button>
+            </div>
+
+            <div class="category_cards">
+                <div class="card" data-category="riesgoIIb diagnostico">
+                    <img src="https://www.philips.com.co/c-dam/b2bhc/master/Products/Category/magnetic-resonance/imaging-systems/ingenia-1.5t.png"
+                        alt="Resonador Magnético">
+                    <h3>Resonador Magnético</h3>
+                    <p><strong>Descripción:</strong> Equipo de diagnóstico avanzado que utiliza un campo magnético y ondas de
+                        radio para generar imágenes detalladas de órganos y tejidos internos. Ideal para evaluar
+                        enfermedades neurológicas, musculoesqueléticas y cardiovasculares sin la necesidad de radiación
+                        ionizante.</p>
+                    <a href="#"><button class="button_eb">Ver más</button></a>
+                </div>
+
+                <div class="card" data-category="riesgoIIb soporte">
+                    <img src="https://incliser.com/wp-content/uploads/2024/05/incubadora-neonatal-bt-500-incl01.webp"
+                        alt="Incubadora">
+                    <h3>Incubadora Neonatal</h3>
+                    <p><strong>Descripción:</strong> Dispositivo diseñado para proporcionar un ambiente controlado de temperatura,
+                        humedad y oxigenación para recién nacidos prematuros o de bajo peso, asegurando condiciones
+                        óptimas para su desarrollo y supervivencia.</p>
+                    <a href="#"><button class="button_eb">Ver más</button></a>
+                </div>
+
+                <div class="card" data-category="riesgoIIb terapia">
+                    <img src="../sources/desfibrilador.jpg" alt="Desfibrilador Bifásico">
+                    <h3>Desfibrilador Bifásico</h3>
+                    <p><strong>Descripción:</strong> Indicado para diagnosticar y tratar los paros cardiorespiratorios por
+                        fibrilación ventricular o taquicardia ventricular sin pulso, restableciendo un ritmo cardíaco
+                        efectivo eléctrica y mecánicamente al emitir un pulso de corriente contínua al corazón bifásico
+                        y controlado.</p>
+                    <a href="#"><button class="button_eb">Ver más</button></a>
+                </div>
+
+                <div class="card" data-category="riesgoIIb terapia">
+                    <img src="https://medicimports.com/wp-content/uploads/2023/09/fox.png" alt="Electrobisturí">
+                    <h3>Electrobisturí</h3>
+                    <p><strong>Descripción:</strong> Dispositivo quirúrgico que utiliza corrientes eléctricas de alta frecuencia
+                        para cortar o coagular tejidos, reduciendo el sangrado durante procedimientos quirúrgicos.</p>
+                    <a href="#"><button class="button_eb">Ver más</button></a>
+                </div>
+
+                <div class="card" data-category="riesgoIIb diagnostico">
+                    <img src="https://www.enciendecuenca.com/wp-content/uploads/2022/07/equipo-sanitario.jpg"
+                        alt="Gammacamara">
+                    <h3>Gammacamara</h3>
+                    <p><strong>Descripción:</strong> Sistema de imagen molecular que utiliza radiotrazadores para captar imágenes
+                        funcionales de órganos y tejidos, principalmente en estudios de medicina nuclear como
+                        gammagrafías y estudios de perfusión miocárdica.</p>
+                    <a href="#"><button class="button_eb">Ver más</button></a>
+
+                </div>
+
+                <div class="card" data-category="riesgoIII diagnostico">
+                    <img src="https://aybmedica.com/wp-content/uploads/2023/02/AB-Equipos-Medicos-Cadwell-Cascade-IOMAX-1.jpg"
+                        alt="Monitor Cadwell">
+                    <h3>Sistema de Neuromonitoreo Intraoperatorio</h3>
+                    <p><strong>Descripción:</strong> Sistema avanzado utilizado durante procedimientos quirúrgicos, especialmente
+                        en cirugías de columna, para monitorear la integridad funcional de las vías neurológicas en
+                        tiempo real. El equipo permite la detección temprana de lesiones nerviosas mediante la medición
+                        de señales eléctricas del sistema nervioso central y periférico. Proporciona información crítica
+                        al equipo quirúrgico para prevenir daños neurológicos permanentes.</p>
+                    <a href="#"><button class="button_eb">Ver más</button></a>
+                </div>
+
+                <div class="card" data-category="riesgoIIa diagnostico">
+                    <img src="https://www.digimed.com.ar/wp-content/uploads/2016/07/dp10p-2.jpg" alt="Ecografo">
+                    <h3>Ecografo</h3>
+                    <p><strong>Descripción:</strong> Dispositivo médico avanzado diseñado para obtener imágenes en tiempo real del
+                        interior del cuerpo humano mediante ultrasonido. Es ampliamente utilizado en diagnóstico médico
+                        para evaluar órganos internos, tejidos y vasos sanguíneos, así como para monitorear el
+                        desarrollo fetal durante el embarazo. El equipo funciona emitiendo ondas sonoras de alta
+                        frecuencia a través de un transductor, que luego capta los ecos reflejados por las estructuras
+                        internas del cuerpo. Proporciona información detallada y no invasiva que es fundamental para el
+                        diagnóstico clínico y la planificación de tratamientos.</p>
+                    <a href="#"><button class="button_eb">Ver más</button></a>
+                </div>
+
+                <div class="card" data-category="riesgoI diagnostico">
+                    <img src="" alt="Estetoscopio">
+                    <h3>Estetoscopio</h3>
+                    <p><strong>Descripción:</strong> Es un dispositivo no invasivo usado para auscultar sonidos del corazón, pulmones y otros órganos. No representa ningún riesgo para el paciente ni el operador, no requiere calibración y su mal funcionamiento no compromete la vida del paciente.</p>
+                    <a href="#"><button class="button_eb">Ver más</button></a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+    "header": {
+        "nav1": "Home",
+        "nav2": "Categories",
+        "nav3": "Search",
+        "nav4": "Resources"
+    },
+    "home": {
+        "welcome": "Welcome to EncicloEB",
+        "first_parra": "Welcome to the Biomedical Equipment Encyclopedia! Here you will find detailed information about various biomedical equipment, including their function, associated risks, and other important features. Additionally, we offer interactive 3D models to provide a more dynamic and engaging learning experience.",
+        "second_parra": "Biomedical equipment are essential tools in the field of medicine, designed to diagnose, treat, and monitor patients. Proper use is crucial to ensure the quality and safety of healthcare services, allowing medical professionals to perform procedures and treatments with effectiveness and precision.",
+        "searching_title": "Equipment Search",
+        "placeholder_search": "Search...",
+        "button_search": "Search",
+        "top_equipment": "Featured Biomedical Equipment"
+    }
+}

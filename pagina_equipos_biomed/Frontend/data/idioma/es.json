@@ -1,0 +1,17 @@
+{
+    "header": {
+        "nav1": "Inicio",
+        "nav2": "Categorías",
+        "nav3": "Búsqueda",
+        "nav4": "Recursos"
+    },
+    "home": {
+        "welcome": "Bienvenido a EncicloEB",
+        "first_parra": "¡Bienvenido a la enciclopedia de Equipos Biomédicos! Aquí encontrarás información detallada sobre diversos equipos biomédicos, incluyendo su funcionamiento, riesgos asociados y otras características importantes. Además, ofrecemos modelos 3D interactivos para facilitar una experiencia de aprendizaje más dinámica y atractiva.",
+        "second_parra": "Los equipos biomédicos son herramientas esenciales en el campo de la medicina, diseñadas para diagnosticar, tratar y monitorear a los pacientes. Su correcto uso es fundamental para garantizar la calidad y seguridad en los servicios de salud, permitiendo a los profesionales médicos realizar procedimientos y tratamientos con eficacia y precisión.",
+        "searching_title": "Búsqueda de Equipos",
+        "placeholder_search": "Buscar...",
+        "button_search": "Buscar",
+        "top_equipment": "Equipos Biomédicos Destacados"
+    }
+}
