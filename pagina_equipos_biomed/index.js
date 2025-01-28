@@ -1,65 +1,9 @@
-// const express = require("express");
-// const mysql = require("mysql2/promise");
-// const bodyParser = require("body-parser");
-
-// const app = express();
-// const port = 3000;
-
-// // Middleware para parsear el cuerpo de la solicitud como JSON
-// app.use(bodyParser.json());
-
-// // Configura la conexión a la base de datos
-// const db = mysql.createPool({
-//     host: "localhost",
-//     port: 3306,
-//     user: "root",
-//     password: "",
-//     database: "proyecto_bootcamp"
-// });
-
-
-// app.post("/registro", async (req, res) => {
-//     const { username, languageUser, email, password } = req.body;
-
-//     try {
-//         const [rows] = await db.query("SELECT * FROM usuarios WHERE email = ?", [email])
-//         const [row] = await db.query("SELECT * FROM usuarios WHERE username = ?", [username])
-//         if (rows.length > 0){
-//             return res.status(400).send("El email ya está registrado.")
-//         } else if (row.length > 0){
-//             return res.status(400).send("El nombre de usuario ya está registrado.")
-//         }
-//         await db.query("INSERT INTO usuarios (username, languageUser, email, password) VALUES (?, ?, ?, ?)", [username, languageUser, email, password]);
-//         console.table(result);
-//         console.log("Lenguaje agregado correctamente");
-//         res.status(201).send("Usuario registrado correctamente.");
-//     } catch (err) {
-//         console.error(err);
-//         res.status(500).send("Error al registrar al usuario.");
-//     }
-
-// })
-
-// const getUsers = async () => {
-//     try {
-//         const [result] = await db.query("SELECt id, username, languageUser, email, password FROM usuarios")
-//         console.table(result);
-//         console.log("Usuarios obtenidos correctamente");
-//     } catch (error) {
-//         console.error(error);
-//     }
-// }
-
-// getUsers();
-
-// // Inicia el servidor
-// app.listen(port, () => {
-//     console.log(`Servidor corriendo en http://localhost:${port}`);
-// });
 
 const express = require("express");
 const path = require("path");
 const mysql = require("mysql2/promise");
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
 
 const app = express();
 const PORT = 3001;
@@ -122,8 +66,11 @@ app.post('/registro', async (req, res) => {
             return res.status(400).send("El nombre de usuario ya está registrado.");
         }
 
+        const hashedPassword = await bcrypt.hash(password, saltRounds);
+
         // Insertar nuevo usuario
-        const [result] = await db.query("INSERT INTO usuarios (username, languageUser, email, password) VALUES (?, ?, ?, ?)", [username, languageUser, email, password]);
+        const [result] = await db.query("INSERT INTO usuarios (username, languageUser, email, password) VALUES (?, ?, ?, ?)", [username, languageUser, email, hashedPassword]);
+
         res.status(201).send("Usuario registrado correctamente.");
         console.table(result);
         getUsers();
@@ -140,10 +87,17 @@ app.post('/login', async (req, res) => {
 
     try {
         // Verificar si el usuario existe y la contraseña es correcta
-        const [rows] = await db.query("SELECT * FROM usuarios WHERE email =? AND password =?", [email, password]);
+        const [rows] = await db.query("SELECT * FROM usuarios WHERE email =?", [email]);
 
         if (rows.length === 0) {
-            return res.status(401).send("Contraseña o correo incorrecto.");
+            return res.status(401).send("Correo o contraseña incorrectos.");
+        }
+
+        const user = rows[0];
+
+        const match = await bcrypt.compare(password, user.password);
+        if (!match){
+            return res.status(401).send("Correo o contraseña incorrectos.")
         }
 
         res.status(200).send("Sesión iniciada correctamente.");
@@ -166,7 +120,9 @@ app.put("/update", async (req, res) => {
         }
 
         // Aquí actualizamos la contraseña con el valor de "newPassword"
-        await db.query("UPDATE usuarios SET password = ? WHERE email = ?", [newPassword, email]);
+        const hashedNewPassword = await bcrypt.hash(newPassword, saltRounds);
+
+        await db.query("UPDATE usuarios SET password = ? WHERE email = ?", [hashedNewPassword, email]);
 
         res.status(200).send("Contraseña actualizada correctamente.");
         console.log("Usuario actualizado correctamente.");
@@ -176,10 +132,6 @@ app.put("/update", async (req, res) => {
         res.status(500).send("Error al actualizar al usuario.");
     }
 });
-
-app.get('/equipos/:equipo', (req, res) => {
-
-})
 
 const getUsers = async () => {
     try {
